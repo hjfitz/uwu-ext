@@ -1,0 +1,14 @@
+{
+	"name": "uwuify",
+	"version": "1.0",
+	"description": "make a page cuter~!",
+	"permissions": ["activeTab"],
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"run_at": "document_end",
+			"js": ["extension.js"]
+		}
+	],
+	"manifest_version": 2
+}
